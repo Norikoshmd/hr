@@ -17,6 +17,7 @@ services:
 
   db:
     image: mysql:8.0.26
+    container_name: db
     build: ./infra/mysql
     ports:
       - ${DB_PORT}:3306
